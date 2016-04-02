@@ -10,9 +10,9 @@ class MyMessageSidebar extends React.Component
   @displayName: 'MyMessageSidebar'
 
   options = {
+           redirect_uri: "yourredirecturlhere",  
            client_id: "",
            client_secret: "",
-           redirect_uri: "yourredirecturlhere",  
            scopes: ["data:read_write"]
   }
 
