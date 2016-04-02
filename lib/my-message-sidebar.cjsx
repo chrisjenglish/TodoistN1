@@ -61,7 +61,7 @@ class MyMessageSidebar extends React.Component
     </div>
 
   _renderAddToTodoist: =>
-
+    return <span /> unless @state.thread
     <div className="todoist-sidebar">
       <input className="textBox" type="text" id="taskName" placeholder={@state.thread.subject}/>
       <div className="buttonFullWidth" onClick={@_addToTodoistPost}><p>Add to Todoist</p></div>
