@@ -10,7 +10,7 @@ class MyMessageSidebar extends React.Component
   @displayName: 'MyMessageSidebar'
 
   options = {
-           redirect_uri: "yourredirecturlhere",  
+           redirect_uri: "yourredirecturlhere",
            client_id: "",
            client_secret: "",
            scopes: ["data:read_write"]
@@ -136,7 +136,7 @@ class MyMessageSidebar extends React.Component
      mainUrl = todoistUrl + 'client_id=' + options.client_id + '&scope=' + options.scopes
      console.log mainUrl
      authWindow = new BrowserWindow({ width: 800, height: 600, show: false, 'node-integration': false })
-     authWindow.loadUrl(mainUrl)
+     authWindow.loadURL(mainUrl)
      authWindow.show()
      authWindow.webContents.on('did-get-redirect-request',@handleCallback)
 
